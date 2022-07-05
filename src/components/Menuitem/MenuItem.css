@@ -1,0 +1,44 @@
+.app__menuitem {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.app__menuitem-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app__menuitem-head_name {
+  flex: 1;
+}
+
+.app__menuitem-head_name p {
+  color: var(--color-golden);
+}
+
+.app__menuitem-dash {
+  width: 90px;
+  height: 1px;
+  background: var(--color-golden);
+  margin: 0 1rem;
+}
+
+.app__menuitem-price {
+  display: flex;
+  justify-self: flex-end;
+  align-items: flex-end;
+  color: var(--color-white);
+  text-transform: capitalize;
+}
+
+.app__menuitem-sub {
+  margin-top: 0.2rem;
+  width: 100%;
+}
+
+.app__menuitem-sub p {
+  color: rgb(170, 170, 170);
+}
