@@ -55,3 +55,9 @@
 
   margin-top: 3rem;
 }
+
+@media screen and (max-width: 1150px) {
+  .app__footer-links {
+    grid-template-columns: 1fr;
+  }
+}

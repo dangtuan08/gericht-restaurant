@@ -23,3 +23,19 @@
   padding: 0.75rem 1rem;
   background: var(--color-black);
 }
+
+@media screen and (max-width: 1150px) {
+  .app__newsletter {
+    max-width: 100%;
+  }
+
+  .app__newsletter-input {
+    flex-direction: column;
+  }
+
+  .app__newsletter-input input {
+    margin-bottom: 2rem;
+    margin-right: 0;
+    max-width: 100%;
+  }
+}

@@ -1,6 +1,6 @@
 .app__gallery {
   background: var(--color-black);
-  padding: 4rem 0 4rem 4rem;
+  padding: 4rem 0 4rem 6rem;
 }
 
 .app__gallery-content {
@@ -88,10 +88,22 @@
 
 @media screen and (max-width: 1150px) {
   .app__gallery {
+    padding: 4rem;
+
     flex-direction: column;
   }
   .app__gallery-images {
     margin-top: 5rem;
     max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .app__gallery {
+  }
+
+  .app__gallery-content {
+    max-width: 100%;
+    min-width: 0;
   }
 }
