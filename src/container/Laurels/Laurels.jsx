@@ -16,7 +16,10 @@ const Adward = ({ adward }) => {
 };
 
 const Laurels = () => (
-  <div className="app__bg app__wrapper section__padding app__laurels">
+  <div
+    className="app__bg app__wrapper section__padding app__laurels"
+    id="awards"
+  >
     <div className="app__laurels_info">
       <SubHeading title="Awards & Recognition" />
       <h1 className="headtext__cormorant">Our Laurels</h1>
