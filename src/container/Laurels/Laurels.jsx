@@ -38,7 +38,7 @@ const Laurels = () => (
 
     <div className="app__laurels_img">
       <ToLefttWhenVisible>
-        <img src={images.laurels} alt="laurels image" />
+        <img src={images.laurels} alt="laurels" />
       </ToLefttWhenVisible>
     </div>
   </div>

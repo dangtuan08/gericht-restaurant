@@ -19,7 +19,7 @@ const galleryImage = [
 const CardImage = ({ image }) => {
   return (
     <div className="app__gallery-images_card flex__center">
-      <img src={image} alt="image gallery" />
+      <img src={image} alt="gallery" />
       <BsInstagram className="gallery__image-icon" />
     </div>
   );
