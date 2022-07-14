@@ -1,4 +1,8 @@
 import React from "react";
+import {
+  ToLefttWhenVisible,
+  ToRightWhenVisible,
+} from "../../components/FramerMotionComp";
 import SubHeading from "../../components/SubHeading/SubHeading";
 import { images, data } from "../../constants";
 import "./Laurels.css";
@@ -21,16 +25,21 @@ const Laurels = () => (
     id="awards"
   >
     <div className="app__laurels_info">
-      <SubHeading title="Awards & Recognition" />
-      <h1 className="headtext__cormorant">Our Laurels</h1>
-      <div className="app__laurels_awards">
-        {data.awards.map((item, index) => {
-          return <Adward key={index} adward={item} />;
-        })}
-      </div>
+      <ToRightWhenVisible>
+        <SubHeading title="Awards & Recognition" />
+        <h1 className="headtext__cormorant">Our Laurels</h1>
+        <div className="app__laurels_awards">
+          {data.awards.map((item, index) => {
+            return <Adward key={index} adward={item} />;
+          })}
+        </div>
+      </ToRightWhenVisible>
     </div>
+
     <div className="app__laurels_img">
-      <img src={images.laurels} alt="laurels image" />
+      <ToLefttWhenVisible>
+        <img src={images.laurels} alt="laurels image" />
+      </ToLefttWhenVisible>
     </div>
   </div>
 );

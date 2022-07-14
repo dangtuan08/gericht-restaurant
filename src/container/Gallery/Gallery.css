@@ -19,12 +19,16 @@
   color: #aaa;
 }
 
-.app__gallery-images {
+.app__gallery-images_wrapper {
   flex: 1;
+  max-width: 50%;
+}
+
+.app__gallery-images {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 50%;
+
   position: relative;
 }
 
@@ -92,16 +96,13 @@
 
     flex-direction: column;
   }
-  .app__gallery-images {
+  .app__gallery-images_wrapper {
     margin-top: 5rem;
     max-width: 100%;
   }
 }
 
 @media screen and (max-width: 650px) {
-  .app__gallery {
-  }
-
   .app__gallery-content {
     max-width: 100%;
     min-width: 0;

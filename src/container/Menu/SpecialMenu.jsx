@@ -1,5 +1,10 @@
 import React from "react";
 import { MenuItem, SubHeading } from "../../components";
+import {
+  FadeInWhenVisible,
+  ToLefttWhenVisible,
+  ToRightWhenVisible,
+} from "../../components/FramerMotionComp";
 import { data, images } from "../../constants";
 import "./SpecialMenu.css";
 
@@ -12,25 +17,31 @@ const SpecialMenu = () => (
 
     <div className="app__specialMenu-menu">
       <div className="app__specialMenu-menu_wine flex-center">
-        <p className="app__specialMenu-menu_heading">Wine & Beer</p>
-        <div className="app__specialMenu_menu-items">
-          {data.wines.map((wine, index) => {
-            return <MenuItem item={wine} />;
-          })}
-        </div>
+        <ToRightWhenVisible>
+          <p className="app__specialMenu-menu_heading">Wine & Beer</p>
+          <div className="app__specialMenu_menu-items">
+            {data.wines.map((wine, index) => {
+              return <MenuItem item={wine} />;
+            })}
+          </div>
+        </ToRightWhenVisible>
       </div>
 
       <div className="app__specialMenu-menu_img">
-        <img src={images.menu} alt="menu" />
+        <FadeInWhenVisible>
+          <img src={images.menu} alt="menu" />
+        </FadeInWhenVisible>
       </div>
 
       <div className="app__specialMenu-menu_wine flex-center">
-        <p className="app__specialMenu-menu_heading">Cocktails</p>
-        <div className="app__specialMenu_menu-items">
-          {data.cocktails.map((cocktails, index) => {
-            return <MenuItem item={cocktails} />;
-          })}
-        </div>
+        <ToLefttWhenVisible>
+          <p className="app__specialMenu-menu_heading">Cocktails</p>
+          <div className="app__specialMenu_menu-items">
+            {data.cocktails.map((cocktails, index) => {
+              return <MenuItem item={cocktails} />;
+            })}
+          </div>
+        </ToLefttWhenVisible>
       </div>
     </div>
     <div className="app__specialMenu-viewmore">
