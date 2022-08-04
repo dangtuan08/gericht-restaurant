@@ -63,6 +63,7 @@ export function UpWhenVisible({ children }) {
         visible: { opacity: 1, translateY: 0 },
         hidden: { opacity: 0, translateY: 100 },
       }}
+      style={{maxWidth: '100%'}}
     >
       {children}
     </motion.div>

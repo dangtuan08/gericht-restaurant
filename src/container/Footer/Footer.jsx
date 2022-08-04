@@ -11,9 +11,11 @@ const Footer = () => (
   <div className="app__footer section__padding">
     <FooterOverlay />
 
-    <UpWhenVisible>
-      <Newsletter />
-    </UpWhenVisible>
+    {/* <div className="app__footer_newsletter"> */}
+      <UpWhenVisible>
+        <Newsletter />
+      </UpWhenVisible>
+    {/* </div> */}
 
     <UpWhenVisible>
       <div className="app__footer-links">
